@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 830px) {
+  .product_details{
+    display:flex;
+    flex-direction:row;
   }
+  .moreimages{
+    position: absolute;
+    top: 700px;
+  }
+  #photos{
+    width : 45%;
+  }
+  .moreoptions{
+    display : flex;
+    flex-direction:row;
+  }
+  .samephones{
+    width : 25%;
+    padding : 8px;
+    }
 }
+  @media (max-width: 830px) {
+    .moreimages{
+      position: absolute;
+      top: 1270px;
+    }
+    .samephones{
+      width : 80%;
+      padding : 15px;
+      }
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.heading_div{
+  height : 120px;
+  position: fixed;
+  width: 100%;
+  z-index : 4;
+}
+.first_head{
+  display:flex;
+  flex-direction: row;
+  background-color: black;
+  height : 60px;
+  width :100%;
+  position : fixed;
+  top : 0px;
+  margin : 0px;
+  z-index: 5;
+}
+#para1{
   color: white;
+  width : 50%;
+  font-family:Arial, "Courier New" ;
+  font-size: 30px;
+  font-weight: 550;
+  text-align:left;
+  left : 7px;
+  padding :10px;
 }
-
-.App-link {
-  color: #61dafb;
+#para2{
+  color: white;
+  width : 50%;
+  font-family: "Courier New" ;
+  font-size: 30px;
+  font-weight: 550;
+  text-align: right;
+    padding :7px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#buttons {
+  background-color: #4169e1;
+  border: none;
+  color: white;
+    height : 48px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+a {
+  color:white;
+   text-decoration: none;
+   font-family: "Arial Narrow","Courier New" ;
+   font-size: 20px;
+}
+.second_head{
+  display:flex;
+  flex-direction: row;
+  background-color: #808080;
+  height : 38px;
+  width :100%;
+  position : fixed;
+  top : 60px;
+  margin : 0px;
+}
+.head2{
+  padding : 8px;
+}
+.product_details{
+  width: 100%;
+  height: 650px;
+  position : absolute;
+  top : 98px;
+  z-index :-1;
+  margin: 0;
+}
+#photos{
+  height: 570px;
+}
+#features{
+  display: flex;
+  height : 20px;
+}
+.features_part{
+  width : 33%;
+  height : 100px;
+  text-align : center;
+  font-family : Arial;
+}
+.part1{
+  font-family:"Courier New" ;
+  font-size: 25px;
+  font-weight: 550;
+}
+.part2{
+  font-family:"Courier New" ;
+  font-size: 20px;
+  font-weight: 500;
+}
+#cpuspeed{
+border-right : 2px solid black;
+}
+#cputype{
+border-right : 2px solid black;
+width : 26%;
+}
+#weight{
+border-right : 2px solid black;
+}
+#description{
+  font-size: 18px;
+  height: 600px;
+  padding : 25px;
+}
+#name{
+  font-size: 30px;
+  font-weight: 550;
+}
+.color_buttons {
+  cursor : pointer;
+  margin : 3%;
+  border: none;
+  height : 65px;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  font-weight: 550;
+}
+#blue{
+color : blue;
+}
+#green{
+  color : #008080
+}
+.storage_value{
+  margin : 18px;
+  border: none;
+  height : 35px;
+  width : 25%;
+  padding : 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  font-weight: 550;
+  width:20%;
+  line-height: 30%;
+}
+.storage{
+  display: flex;
+}
+h5{
+  color : grey;
+}
+#ram{
+  height:25px;
+}
+.moreimages
+{
+  width : 100%
+}
+.images_div{
+  z-index:-1;
+}
+.images{
+  width : 100%;
+  z-index: -1;
+}
+.info1{
+  text-align : center;
+}
+#span1{
+  font-size: 50px;
+  font-family : arial;
+  font-weight: 600;
+}
+.specifications {
+  display : flex;
+  background-color :#DCDCDC;
+}
+.lists{
+  padding : 20px;
 }
