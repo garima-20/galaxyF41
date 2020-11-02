@@ -1,3 +1,9 @@
+.displayimg{
+  display: none;
+}
+
+
+
 @media (min-width: 830px) {
   .product_details{
     display:flex;
